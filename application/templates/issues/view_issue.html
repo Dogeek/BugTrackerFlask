@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Issue #{{ issue.id }}
+{% endblock %}
+
+{% block content %}
+    <div>
+        <h2>Issue #{{issue.id}} - {{issue.name}}</h2>
+        <p>Status : {{issue.status_string}}</p>
+        <p>Priority : {{issue.priority_string}}</p>
+        <p>Version : {{issue.version}}</p>
+        <p>OS : {{issue.operating_system}}</p>
+        <span>
+            Attachments :
+            {% for link in issue.attachments %}
+                <a href="{{link}}"> Attachment #{{loop}}</a>
+            {% endfor %}
+        </span>
+        <br /><br />
+        <span>
+            Reported by :
+            <a href="/user/{{issue.reported_by}}"> {{ issue.reported_by_name }} </a>
+        </span>
+
+        <div>
+            <h3>Description :</h3>
+            <p>
+                {{issue.description}}
+            </p>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+{% endblock %}

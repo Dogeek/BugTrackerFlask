@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8430d8a6-adf8-455d-825f-450eb40e83a6" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1TZIMbdfkSdUB7VrgjDTdqbvvza" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/static" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Developpement\PythonProjects\BugTrackerFlask\application\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Developpement\PythonProjects\BugTrackerFlask\application\mod_users" />
+      <recent name="D:\Developpement\PythonProjects\BugTrackerFlask\application" />
+      <recent name="D:\Developpement\PythonProjects\BugTrackerFlask\application\templates\errors" />
+      <recent name="D:\Developpement\PythonProjects\BugTrackerFlask\application\templates\main" />
+      <recent name="D:\Developpement\PythonProjects\BugTrackerFlask" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Shell Script.Activate VENV">
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="BugTrackerFlask" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="FLASK_ENV" value="development" />
+        <env name="FLASK_APP" value="run.py" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Softwares\python-380-x86\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2">
+        <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_activate venv" />
+      </method>
+    </configuration>
+    <configuration name="Activate VENV" type="ShConfigurationType">
+      <option name="SCRIPT_PATH" value="D:\Developpement\PythonProjects\BugTrackerFlask\env\Scripts\activate.bat" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RUN (DEBUG)" type="ShConfigurationType">
+      <option name="SCRIPT_PATH" value="D:\Developpement\PythonProjects\BugTrackerFlask\run.bat" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="D:\Developpement\PythonProjects\BugTrackerFlask\env\Scripts\python.exe" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2">
+        <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_activate venv" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ShConfigurationType">
+      <option name="SCRIPT_PATH" value="D:\Developpement\PythonProjects\BugTrackerFlask\run.bat" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="D:\Developpement\PythonProjects\BugTrackerFlask\env\Scripts\python.exe" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.run" />
+      <item itemvalue="Shell Script.Activate VENV" />
+      <item itemvalue="Shell Script.RUN (DEBUG)" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8430d8a6-adf8-455d-825f-450eb40e83a6" name="Default Changelist" comment="" />
+      <created>1573661143362</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573661143362</updated>
+    </task>
+    <servers />
+  </component>
+</project>

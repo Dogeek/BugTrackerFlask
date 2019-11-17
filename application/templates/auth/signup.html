@@ -1,0 +1,46 @@
+{% macro render_field(field, placeholder=None) %}
+{% if field.errors %}
+<div>
+{% elif field.flags.error %}
+<div>
+{% else %}
+<div>
+{% endif %}
+    {% set css_class = 'form-control ' + kwargs.pop('class', '') %}
+    {{ field(class=css_class, placeholder=placeholder, **kwargs) }}
+</div>
+{% endmacro %}
+
+<div>
+  <div>
+    <legend>Sign up</legend>
+    {% with errors = get_flashed_messages(category_filter=["error"]) %}
+    {% if errors %}
+    <div>
+    {% for error in errors %}
+    {{ error }}<br>
+    {% endfor %}
+    </div>
+    {% endif %}
+    {% endwith %}
+
+    {% if signup_form.errors %}
+    <div>
+    {% for field, error in signup_form.errors.items() %}
+    {% for e in error %}
+    {{ e }}<br>
+    {% endfor %}
+    {% endfor %}
+    </div>
+    {% endif %}
+    <form method="POST" action="." accept-charset="UTF-8" role="form">
+      {{ signup_form.csrf_token }}
+      {{ render_field(signup_form.username, placeholder="Your username",
+                                  autofocus="") }}
+      {{ render_field(signup_form.email, placeholder="Your Email Address",
+                                  autofocus="") }}
+      {{ render_field(signup_form.password, placeholder="Password") }}
+      <button type="submit" name="submit">Sign up</button>
+    </form>
+  </div>
+</div>

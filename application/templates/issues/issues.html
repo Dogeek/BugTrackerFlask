@@ -1,0 +1,30 @@
+<div class="table-title">
+    <table class="table-fill">
+        <thead>
+            <tr>
+                <th colspan="2">{{ issues[0][0] }}</th>
+                {% for col in issues[0][1:] %}
+                    <th>{{ col }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+        {% for issue in issues[1:] %}
+            {% set rowloop = loop %}
+            <tr class="{{ loop.cycle('table-row-odd', 'table-row-even') }} table-row table-row-{{rowloop.index}}">
+                <td class="upvote-downvote-buttons-cell">
+                    <div class="upvote">
+                        <button class="button-upvote-{{rowloop.index}}">▲</button>
+                    </div>
+                    <div class="downvote">
+                        <button class="button-downvote-{{rowloop.index}}">▼</button>
+                    </div>
+                </td>
+                {% for col in issue.values() %}
+                    <td id="cell-{{ rowloop.index }}-{{ loop.index }}">{{ col }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>

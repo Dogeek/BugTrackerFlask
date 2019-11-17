@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ user.name }}
+{% endblock %}
+
+{% block content %}
+    <div>
+        <h2>User {{user.name}}</h2>
+    </div>
+    <h3>Issues :</h3>
+    <div class="user-issues-view">
+        {% for issue in user.get_issues %}
+            <a href="/issue/{{issue.id}}"class="single-issue-link"> #{{issue.id}} - {{issue.name}}</a>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+{% endblock %}

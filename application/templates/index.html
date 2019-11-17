@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}
+    Index
+{% endblock %}
+
+{% block login %}
+    <span class="headbar">
+        <a href="/issue/new">New Issue</a>
+        {% include 'auth/signin.html' %}
+    </span>
+{% endblock %}
+
+{% block content %}
+    {% include 'issues/issues.html' %}
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    <script type=text/javascript src="{{ url_for('static', filename='issues-table.js') }}"></script>
+{% endblock %}
